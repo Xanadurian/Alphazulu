@@ -1,10 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alpha 2 Zulu Family Firearms Training</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #0a0a0a;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #4dabf7;
+    }
+    .hero {
+      background: linear-gradient(135deg, #141e30, #243b55);
+      color: #fff;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .hero .btn {
+      background: #4dabf7;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .hero .btn:hover {
+      background: #339af0;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background: #fff;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background: #0a0a0a;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my website hosted on GitHub Pages!</p>
+
+<header>
+  <h1>MyBrand</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Build Smarter. Move Faster.</h2>
+  <p>We deliver cutting-edge solutions for modern businesses.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<section id="services">
+  <h2 style="text-align:center;margin-bottom:2rem;">Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Consulting</h3>
+      <p>Strategic guidance to accelerate your business growth.</p>
+    </div>
+    <div class="card">
+      <h3>Development</h3>
+      <p>High-performance web and mobile applications tailored to your needs.</p>
+    </div>
+    <div class="card">
+      <h3>Integration</h3>
+      <p>Seamless systems integration to streamline your workflow.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 style="text-align:center;margin-bottom:2rem;">About Us</h2>
+  <p style="max-width:800px;margin:auto;text-align:center;">
+    We are a team of technology enthusiasts dedicated to delivering innovative 
+    digital solutions that empower companies to grow and succeed in a connected world.
+  </p>
+</section>
+
+<section id="contact">
+  <h2 style="text-align:center;margin-bottom:2rem;">Contact Us</h2>
+  <p style="text-align:center;">
+    Email us at <a href="mailto:info@mybrand.com">info@mybrand.com</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 MyBrand. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
